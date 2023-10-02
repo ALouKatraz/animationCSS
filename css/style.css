@@ -2,10 +2,88 @@
     margin: 0;
     padding: 0;
 }
+/**********FONTS*************/
+@font-face {
+    font-family: 'DolceLight';
+    src: url('../font/DolceVitaLight.eot');
+    src: url('../font/DolceVitaLight.eot?#iefix') format('embedded-opentype'),
+        url('../font/DolceVitaLight.woff2') format('woff2'),
+        url('../font/DolceVitaLight.woff') format('woff'),
+        url('../font/DolceVitaLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Dolce';
+    src: url('../font/DolceVita.eot');
+    src: url('../font/DolceVita.eot?#iefix') format('embedded-opentype'),
+        url('../font/DolceVita.woff2') format('woff2'),
+        url('../font/DolceVita.woff') format('woff'),
+        url('../font/DolceVita.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NEO';
+    src: url('../font/NEOTERIC-Bold.eot');
+    src: url('../font/NEOTERIC-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../font/NEOTERIC-Bold.woff2') format('woff2'),
+        url('../font/NEOTERIC-Bold.woff') format('woff'),
+        url('../font/NEOTERIC-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+/**********FIN FONTS*************/
+
+/**********HEADER************/
 header{
     height: 70px ; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
+header img{
+    border: 2px solid black;
+    width: 20%;
+    height: 100%;
+}
+header nav{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+header nav ul li{
+    display: flex;
+    justify-content: flex-end;
+}
+header nav ul li a, span{ 
+    text-transform: uppercase;
+    color: black;
+    font-size: 20px;
+    font-weight:lighter;
+    margin: 5px;
+}
+
+/************MAIN**********/
 main{
-    height: calc(100vh-70px);
+    height: calc(100vh - 70px);
     background: url(../img/fond3.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main section{
+    border: 5px solid;
 }
