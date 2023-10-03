@@ -42,21 +42,22 @@
 
 /**********HEADER************/
 header{
-    height: 50px ; 
-    display: flex;
-    justify-content: flex-end;
+    height: 70px ; /*taille*/ 
+    display: flex; /*permet à l'image et la nav d'être côte/côte*/
+    justify-content: space-between;/*répartition sur la largeur - gauche et à droite bord à bord*/
 }
 header img{
     /*border: 2px solid black;*/
-    width: 20%;
-    height: 100%;
+    height: 50px;
+    margin: 10px;
 }
 header nav{
-    width: 80%;
-    height: 100%;
+    /*width: 80%;
+    height: 100%;*/
     display: flex;
-    justify-content: flex-end;
+    /*justify-content: flex-end; **********Non nécessaire***/
     align-items: end;
+    margin-right: 10px;
 }
 header nav ul{
     list-style: none;
@@ -68,36 +69,160 @@ header nav ul li{
     display: flex;
     justify-content: flex-end;
 }
-header nav ul li a, span{ 
+header nav ul li a{ 
+    text-decoration: none;
     text-transform: uppercase;
+    letter-spacing: 1px; /*créer un espace entre les lettres interlettrage*/
     color: black;
     font-family: "NEO";
-    font-size: 20px;
+    font-size: 15px;
     font-weight:lighter;
-    margin: 5px;
+    height: 30px;
+    display: block;
+    box-sizing: border-box;
+    transition: 0.5s;
 }
-header nav ul li:hover a{
-    text-decoration: underline 5px;
+header nav ul li span{ 
+    font-family: "NEO";/**/
+    font-size: 15px;/**/
+    font-weight:lighter;/**/
+    margin: 0 15px;
+}
+header nav ul li:hover a, .ici{
+    border-bottom: 7px solid;
 }
 
 /************MAIN**********/
-main{
-    height: calc(100vh - 50px);
+/*main{
+    height: calc(100vh - 70px);
     background: url(../img/fond3.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-/*main section{
-    border: 5px solid;
 }*/
+main section{
+    height: calc(100vh - 70px);
+    background: url(../img/fond3.jpg) center;
+    background-size: cover;
+    display: flex; /*Pouvoir utiliser le justify-content*/
+    justify-content: center;
+    align-items: center;
+}
 main section h1::first-line{
     font-family: "DolceLight";
-    font-size: 60px;
 }
 main section h1{
+    color: white;
     font-family: "Dolce";
-    font-size: 60px;
+    font-size: 100px;
     text-align: center;
+    font-weight: normal;/*desépaisir le font qui est bold car h1*/
 }
+/***************************************
+Les PAGES
+***************************************/
+main section>div{
+    display: flex;
+}
+main section>div div{
+    width  : 150px;
+    height : 150px;
+    margin: 50px;
+    border: 2px solid white;
+}
+
+/*************Rotations***************/
+main #rot>div div:first-of-type{
+    transform: rotate(45deg);/*Rotation de 45°C*/
+}
+main #rot>div div:nth-of-type(2):hover{
+    transform: rotate(45deg);/*Rotation de 45°C*/
+}
+main #rot>div div:nth-of-type(3){
+    transition: 0.5s;/* ajoute l'effet sur la rotation en A/R*/
+}
+main #rot>div div:nth-of-type(3):hover{
+    transform: rotate(45deg);/*Rotation de 45°C au survol*/
+}
+
+main #rot a{
+
+}
+/****************/
+
+/*************Zoom***************/
+main #zoom>div div:first-of-type{
+    transform: scale(1.2);/**/
+}
+main #zoom>div div:nth-of-type(2):hover{
+    transform: scale(0.8) ;/**/
+}
+main #zoom>div div:nth-of-type(3){
+    transition: 0.5s;/* ajoute l'effet sur la rotation en A/R*/
+}
+main #zoom>div div:nth-of-type(3):hover{
+    transform: scale(0.3);/**/
+}
+
+#zoom a{
+
+}
+/****************/
+
+/*************Inclinaison***************/
+main #incli>div div:first-of-type{
+    transform:  ;/*skew*/
+}
+main #incli>div div:nth-of-type(2):hover{
+    transform:  ;/**/
+}
+main #incli>div div:nth-of-type(3){
+    transition: 0.5s;/* ajoute l'effet sur la rotation en A/R*/
+}
+main #incli>div div:nth-of-type(3):hover{
+    transform: scale(0.3) ;/**/
+}
+
+main #incli a{
+
+}
+/****************/
+
+/*************Déplacement***************/
+main #dep>div div:first-of-type{
+    transform: ;/**/
+}
+main #dep>div div:nth-of-type(2):hover{
+    transform: ;/**/
+}
+main #dep>div div:nth-of-type(3){
+    transition: 0.5s;/* ajoute l'effet sur la rotation en A/R*/
+}
+main #dep>div div:nth-of-type(3):hover{
+    transform: ;/**/
+}
+
+main #dep a{
+
+}
+/****************/
+
+/*************Déplacement***************/
+main #dep>div div:first-of-type{
+    transform: ;/**/
+}
+main #dep>div div:nth-of-type(2):hover{
+    transform: ;/**/
+}
+main #dep>div div:nth-of-type(3){
+    transition: 0.5s;/* ajoute l'effet sur la rotation en A/R*/
+}
+main #dep>div div:nth-of-type(3):hover{
+    transform: ;/**/
+}
+
+main #dep a{
+
+}
+/****************/
