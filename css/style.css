@@ -92,9 +92,9 @@ header nav ul li:hover a, .ici{
     border-bottom: 7px solid;
 }
 
-/************MAIN**********/
+/**********************/
 
-main section{
+section{
     height: calc(100vh - 70px);
     background: url(../img/fond3.jpg) center;
     background-size: cover;
@@ -103,10 +103,10 @@ main section{
     align-items: center;
     flex-direction: column;
 }
-main section h1::first-line{
+section h1::first-line{
     font-family: "DolceLight";
 }
-main section h1{
+section h1{
     color: white;
     font-family: "Dolce";
     font-size: 100px;
@@ -117,102 +117,101 @@ main section h1{
 /***************************************
 Les PAGES
 ***************************************/
-main section>div{
+section>div{ /*flex pour les 3 div enfants*/
     display: flex;
 }
-main section>div div{
+section>div div{
     width  : 200px;
     height : 200px;
     margin: 50px;
     border: 2px solid white;
 }
-main section a{
-    margin-top: 15px;
+section a{
+    margin-top: 30px;
     padding: 10px 20px;
-    background: black;
     color: white;
     font-family: "NEO";
 }
 
 /*************Rotations***************/
-main #rot>div div:first-of-type{
+#rot>div div:first-of-type{
     transform: rotate(45deg);/*Rotation de 45°C*/
 }
-main #rot>div div:nth-of-type(2):hover{
+#rot>div div:nth-of-type(2):hover{
     transform: rotate(45deg);/*Rotation de 45°C*/
 }
-main #rot>div div:nth-of-type(3){
+#rot>div div:nth-of-type(3){
     transition: 0.5s;/* ajoute l'effet sur la rotation en A/R*/
 }
-main #rot>div div:nth-of-type(3):hover{
+#rot>div div:nth-of-type(3):hover{
     transform: rotate(45deg);/*Rotation de 45°C au survol*/
 }
 
 /****************/
 
 /*************Zoom***************/
-main #zoom>div div:first-of-type{
+#zoom>div div:first-of-type{
     transform: scale(1.2);/**/
 }
-main #zoom>div div:nth-of-type(2):hover{
+#zoom>div div:nth-of-type(2):hover{
     transform: scale(0.8) ;/**/
 }
-main #zoom>div div:nth-of-type(3){
+#zoom>div div:nth-of-type(3){
     transition: 0.5s;/* ajoute l'effet sur la rotation en A/R*/
 }
-main #zoom>div div:nth-of-type(3):hover{
+#zoom>div div:nth-of-type(3):hover{
     transform: scale(0.3);/**/
 }
 
 /****************/
 
 /*************Inclinaison***************/
-main #incli>div div:first-of-type{
+#incli>div div:first-of-type{
     transform: skewX(15deg)  ;/*skew*/
 }
-main #incli>div div:nth-of-type(2):hover{
+#incli>div div:nth-of-type(2):hover{
     transform: skewX(25deg)  ;/**/
 }
-main #incli>div div:nth-of-type(3){
+#incli>div div:nth-of-type(3){
     transition: 0.5s;/* ajoute l'effet sur la rotation en A/R*/
 }
-main #incli>div div:nth-of-type(3):hover{
+#incli>div div:nth-of-type(3):hover{
     transform: skewX(25deg) ;/**/
 }
 
 /****************/
 
 /*************Déplacement***************/
-main #dep>div div:first-of-type{
+#dep>div div:first-of-type{
     transform: translate(30px,45px) ;/**/
 }
-main #dep>div div:nth-of-type(2):hover{
+dep>div div:nth-of-type(2):hover{
     transform: translate(10px,15px);/**/
 }
-main #dep>div div:nth-of-type(3){
+#dep>div div:nth-of-type(3){
     transition: 0.5s;/* ajoute l'effet sur la rotation en A/R*/
 }
-main #dep>div div:nth-of-type(3):hover{
+#dep>div div:nth-of-type(3):hover{
     transform: translate(30px,15px);/**/
 }
 
 /****************/
 
 /*************Déplacement***************/
-main #ori>div div:first-of-type{
+#ori>div div:first-of-type{
     transform-origin: 0 0 ;/**/
-    transform: translate(30px,45px);
+    transform: rotate(45deg);
 }
-main #ori>div div:nth-of-type(2):hover{
+#ori>div div:nth-of-type(2):hover{
     transform-origin: 0 0;/**/
-    transform: translate(30px,45px);
+    transform: rotate(45deg);
 }
-main #ori>div div:nth-of-type(3){
+#ori>div div:nth-of-type(3){
     transition: 0.5s;/* ajoute l'effet sur la rotation en A/R*/
 }
-main #ori>div div:nth-of-type(3):hover{
+#ori>div div:nth-of-type(3):hover{
     transform-origin: 0 0;/**/
-    transform: translate(30px,45px);
+    transform: rotate(45deg);
 }
 
 
