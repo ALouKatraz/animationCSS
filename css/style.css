@@ -127,12 +127,20 @@ section>div div{
     border: 2px solid white;
 }
 section a{
-    margin-top: 30px;
-    padding: 10px 20px;
-    color: white;
-    font-family: "NEO";
+    margin-top: 50px;
+    padding: 10px 30px;
+    border-radius: 25px;
+    color: black;
+    background: white;
+    font-family: "Dolce";
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: 0.5s;
 }
-
+section a:hover{
+    background: black;
+    color:white;
+}
 /*************Rotations***************/
 #rot>div div:first-of-type{
     transform: rotate(45deg);/*Rotation de 45°C*/
@@ -170,7 +178,7 @@ section a{
     transform: skewX(15deg)  ;/*skew*/
 }
 #incli>div div:nth-of-type(2):hover{
-    transform: skewX(25deg)  ;/**/
+    transform: skewY(25deg);/**/
 }
 #incli>div div:nth-of-type(3){
     transition: 0.5s;/* ajoute l'effet sur la rotation en A/R*/
@@ -186,31 +194,33 @@ section a{
     transform: translate(30px,45px) ;/**/
 }
 dep>div div:nth-of-type(2):hover{
-    transform: translate(10px,15px);/**/
+    transform: translateX(55px);/**/
 }
 #dep>div div:nth-of-type(3){
     transition: 0.5s;/* ajoute l'effet sur la rotation en A/R*/
 }
 #dep>div div:nth-of-type(3):hover{
-    transform: translate(30px,15px);/**/
+    transform: translateY(15px);/**/
 }
 
 /****************/
 
 /*************Déplacement***************/
 #ori>div div:first-of-type{
-    transform-origin: 0 0 ;/**/
+    transform-origin: bottom right;/**/
     transform: rotate(45deg);
 }
+#ori>div div:nth-of-type(2){
+    transform-origin: bottom left;/**/
+}
 #ori>div div:nth-of-type(2):hover{
-    transform-origin: 0 0;/**/
     transform: rotate(45deg);
 }
 #ori>div div:nth-of-type(3){
+    transform-origin: 0 0;/**/
     transition: 0.5s;/* ajoute l'effet sur la rotation en A/R*/
 }
 #ori>div div:nth-of-type(3):hover{
-    transform-origin: 0 0;/**/
     transform: rotate(45deg);
 }
 
